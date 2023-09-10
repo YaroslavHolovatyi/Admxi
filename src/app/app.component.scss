@@ -1,0 +1,11 @@
+.main-page{
+    display: inline-flex;
+    height: 100%;
+    align-items: flex-start;
+    width: 100%;
+    gap: 32px; 
+    & .grid-container{
+        height: 100%;
+        width: 100%;
+    }
+}

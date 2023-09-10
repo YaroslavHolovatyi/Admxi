@@ -1,0 +1,40 @@
+<div class="editing">
+    <form [formGroup]="changeAdvertiserForm">
+        <table>
+            <td>
+                <mat-form-field >
+                    <mat-label>Name</mat-label>
+                    <input matInput [value]="advertiser.name" formControlName="name">
+                </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field >
+                    <mat-label>Country</mat-label>
+                    <input matInput [value]="advertiser.country" formControlName="country">
+                </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field >
+                    <mat-label>ID</mat-label>
+                    <input matInput [value]="advertiser.advertiserId" formControlName="advertiserId">
+                </mat-form-field>
+            </td>
+        </table>
+        <mat-form-field class="full-length" >
+            <mat-label>Campaign Count</mat-label>
+            <input matInput [value]="advertiser.campaignCount" formControlName="campaignCount">
+        </mat-form-field>
+        <mat-form-field class="full-length" >
+            <mat-label>Impressions</mat-label>
+            <input matInput [value]="advertiser.impressions" formControlName="impressions">
+        </mat-form-field>
+        <mat-form-field class="full-length">
+            <mat-label>Profit</mat-label>
+            <input matInput [value]="advertiser.profit" formControlName="profit">
+        </mat-form-field>
+    </form>
+    <div class="footer">
+        <button class="save" (click)="save()"><p>Save</p></button>
+        <button class="cancel" (click)="cancelAll()"><p>Cancel</p></button>
+      </div>
+</div>

@@ -1,0 +1,34 @@
+@import '../../../colors.scss'; 
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 12px;
+    width: 220px;
+    & button{
+      display: flex;
+      padding: 10px 0px 10px 12px;
+      align-items: center;
+      gap: 16px;
+      align-self: stretch; 
+      border: none;
+      border-radius: 8px; 
+      background-color: $default;
+      &:hover{
+        background-color: $hover;
+      }
+    }
+    & .active-link {
+      background-color: $active;
+      opacity: 1;
+      color: $active-text;
+      &:hover{
+        background-color: $active;
+      }
+      & svg{
+        & path{
+          fill: $active-text;
+        }
+      }
+    }
+}

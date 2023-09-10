@@ -1,0 +1,45 @@
+@import '../../../colors.scss';
+
+p{
+    font-family: $body1-regular-fam;
+    font-size: $body1-regular-size;
+    font-style: $body1-regular-style;
+    font-weight: $body1-regular-weight;
+    line-height: $body1-regular-height;
+}
+
+.container{
+    padding: 32px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   & .close{
+        display: inline-flex;
+        height: 36px;
+        padding: 0px 16px;
+        align-items: center;
+        gap: 16px;
+        border-radius: 4px;
+        border: none;
+        background-color: transparent;
+        margin-left: 20px;
+        margin-top: 24px;
+        & p{
+            color: #2196F3;
+            text-align: center;
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: Roboto;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 1.25px;
+            text-transform: uppercase; 
+        }
+        &:hover{
+            background: #E3F2FD;
+        }
+    }
+}
+
+

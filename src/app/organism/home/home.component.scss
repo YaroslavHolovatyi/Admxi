@@ -1,0 +1,41 @@
+@import '../../../colors.scss';
+
+h2{
+    font-family: $h2-medium-fam;
+    font-size: $h2-medium-size;
+    font-style: $h2-medium-style;
+    font-weight: $h2-medium-weight;
+    line-height: $h2-medium-height; 
+}
+
+p{
+    font-family: $body1-regular-fam;
+    font-size: $body1-regular-size;
+    font-style: $body1-regular-style;
+    font-weight: $body1-regular-weight;
+    line-height: $body1-regular-height;
+}
+.home{
+    padding: 20px 0 40px;
+    height: 91%;
+    &__main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        &-content{
+            height: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        & .welcome-back{
+            margin-bottom: 16px;
+        }
+    }
+    &__welcome{
+        text-align: center;
+    }
+    
+}
