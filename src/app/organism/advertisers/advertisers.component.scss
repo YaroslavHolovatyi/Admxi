@@ -45,10 +45,13 @@ h2{
             align-self: stretch;
             & .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix{
                 padding: 15px 0 0 !important;
-              }
+            }
+            & mat-form-field{
+                width: 336px !important;
+            }
         }
         .advertisers{
-            height: 67%;
+            height: 80%;
             &__table{
                 height: 100%;
                 overflow-y: scroll;
